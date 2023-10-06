@@ -27,3 +27,12 @@ Para almacenar los datos de un entrenamiento se usará obligatoriamente la sigui
 Cree un módulo **entrenos.py** e implemente en él una función **lee_entrenos**, que reciba la ruta de un fichero en formato CSV codificado en UTF-8 y devuelva una lista de tuplas de tipo Entreno. Utilice la función datetime.strptime con el formato ```%d/%m/%Y %H:%M``` para convertir la fecha. 
 
 Cree un módulo **entrenos_test.py** e implemente en él una prueba de la función anterior, que lea los datos del ficheros ```entrenos.csv``` ubicado en la carpeta ```data``` y muestre los tres primeros y tres últimos registros leídos. 
+
+## Ejercicios extra
+
+Implemente las siguientes funciones en el módulo **entrenos.py**, y pruébelas convenientemente en el módulo **entrenos_test.py**:
+
+* Función ``busca_entrenamiento_mas_largo``, que recibe una lista de tuplas de tipo ``Entreno`` y un año de tipo ``int`` y devuelve el entrenamiento de mayor duración de ese año.
+* Función ``selecciona_ciudades_tipo_entrenamiento``, que recibe una lista de tuplas de tipo ``Entreno`` y un tipo de entrenamiento de tipo ``str``y devuelve un conjunto con las ciudades donde ha habido ese tipo de entrenamientos.
+* Función ``calcula_total_kilometros``, que recibe una lista de tuplas de tipo ``Entreno`` y un conjunto de ciudades de tipo ``set(str)`` y devuelve el número total de kilómetros recorridos en esas ciudades.
+* Función ``calcula_hora_con_mas_entrenos``, que recibe una lista de tuplas de tipo ``Entreno`` y dos horas de tipo ``int`` (sin minutos, por ejemplo, las 10 y las 11), y devuelve cuál es la hora de entre las dos recibidas con mayor número de entrenos.
